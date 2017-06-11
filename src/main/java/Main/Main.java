@@ -13,7 +13,5 @@ public class Main {
         enableDebugScreen();
 
         new Templates().TempFreeMarker();
-
-
     }
 }

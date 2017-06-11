@@ -18,7 +18,7 @@ public class Templates {
         //post
         get("/index", (request, response) -> {
 
-            return new ModelAndView(null, "index.html");
+            return new ModelAndView(null, "home.html");
         }, freeMarkerEngine);
 
     }
