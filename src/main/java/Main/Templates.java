@@ -15,10 +15,12 @@ public class Templates {
         configuration.setClassForTemplateLoading(Templates.class, "/templates");
         FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine(configuration);
 
-        get("/home/", (request, response) -> {
+        //post
+        get("/index", (request, response) -> {
 
-            return new ModelAndView(null, "home.html");
+            return new ModelAndView(null, "index.html");
         }, freeMarkerEngine);
+
     }
 
 }

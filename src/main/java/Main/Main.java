@@ -11,6 +11,7 @@ public class Main {
         staticFiles.location("/publico");
 
         enableDebugScreen();
+
         new Templates().TempFreeMarker();
 
 
