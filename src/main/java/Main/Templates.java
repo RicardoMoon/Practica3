@@ -21,6 +21,11 @@ public class Templates {
             return new ModelAndView(null, "home.html");
         }, freeMarkerEngine);
 
+        get("/crear", (request, response) -> {
+
+            return new ModelAndView(null, "crearArticulo.ftl");
+        }, freeMarkerEngine);
+
     }
 
 }
